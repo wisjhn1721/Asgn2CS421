@@ -1,15 +1,129 @@
-header, main, footer {
-    min-width: 855px;
-}
-
 body {
     background: #f9e933;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+}
+
+h1{
+    font-size: xx-large; /* sets it relative to the base font size */
+}
+
+h2{
+    font-size: x-large;
+}
+
+h3{
+    font-size: large;
+}
+
+header, main, footer {
+    min-width: 855px;
+    padding-top: 1rem;
+}
+
+header {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid rgba(194, 192, 192, 0.55);
+}
+header .container h1 {
+    color: darkred;
+    font-size: xxx-large;
+    font-style: italic;
+}
+header .container nav a{
+    color: darkred;
+}
+
+header .container nav a:hover {
+    color: red;
+}
+
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
 }
 
 header {
     background: white;
+    overflow: auto;
+}
+
+header h1 {
+    float: left;
+    width: 570px;
+}
+
+header nav {
+    float: right;
+    width: 285px;
 }
 
 main {
     background: white;
+    overflow: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main .main-left-col {
+    float: left;
+    width: 570px;
+
+}
+
+main .main-right-col {
+    float: right;
+    width: 285px;
+}
+
+.main-first-p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.main-first-p h2{
+    padding-bottom: 0.5rem;
+}
+
+.main-second-p {
+    padding-bottom: 1rem;
+}
+
+.main-second-p h3{
+    padding-bottom: 0.5rem;
+}
+
+footer .footer-left-col {
+    float: left;
+    width: 570px;
+}
+
+footer .footer-right-col {
+    float: right;
+    width: 285px;
+}
+
+.footer-left-col .contact h3 {
+    padding-bottom: 1rem;
+}
+
+.contact-company {
+    color: red;
+}
+
+.footer-right-col .sitemap h3 {
+    padding-bottom: 1rem;
+}
+
+.footer-right-col .sitemap ul {
+    color:darkred;
+    columns: 2;
+}
+
+.footer-right-col .sitemap ul a {
+    color:red;
 }
