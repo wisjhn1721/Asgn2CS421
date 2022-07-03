@@ -91,7 +91,7 @@ let main = function (toDoObjects) {
 };
 
 $(document).ready(function () {
-    $.getJSON("todos.json", function (toDoObjects) {
+    $.getJSON("todos.OLD.json", function (toDoObjects) {
         // call main with the to-dos as an argument
         main(toDoObjects);
     });
